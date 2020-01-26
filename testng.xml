@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Automationsuite" parallel="tests" thread-count="2">
+    <test name="EmpirixMultiTest">
+        <parameter name ="browser" value="Chrome"/>
+        <classes>
+            <class name="test.java.EmpirixTest"/>
+        </classes>
+    </test>
+    <test name="EmpirixMultiTestFirefox">
+    <parameter name ="browser" value="Firefox"/>
+    <classes>
+        <class name="test.java.EmpirixTest"/>
+    </classes>
+    </test>
+
+    <test name="EmpirixMultiTestIE">
+        <parameter name ="browser" value="IE"/>
+        <classes>
+            <class name="test.java.EmpirixTest"/>
+        </classes>
+    </test>
+</suite>
+
